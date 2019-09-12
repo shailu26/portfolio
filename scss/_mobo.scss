@@ -1,3 +1,9 @@
+// for Deployment use this $home-image
+//$portrait-small: url(/img/portrait_small.jpg);
+
+// else development time use this $home-image and comment Deployment $home-image
+$portrait-small: url(/dist/img/portrait_small.jpg);
+
 // WideScreen
 @include mediaXl {}
 
@@ -38,7 +44,7 @@
         transform: translate3d(100%, 0, 0);
 
         .portrait {
-            background: url(/dist/img/portrait_small.jpg);
+            background: $portrait-small;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -59,6 +65,11 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .platform-skills,
+    .framework-db-skills {
+        padding: 1rem;
+    }
 }
 
 
@@ -71,4 +82,23 @@
     .projects {
         grid-template-columns: 1fr;
     }
+
+    .framework-db-skills {
+        display: block;
+    }
+
+    .frameworks,
+    .database {
+        width: 100%;
+    }
+
+    .platform-skills,
+    .framework-db-skills {
+        padding: 1rem;
+    }
+}
+
+.highlighter {
+    background: black;
+    padding: 5px;
 }

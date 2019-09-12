@@ -1,3 +1,9 @@
+// for Deployment use this $home-image
+//$portrait: url(/img/portrait.png);
+
+// else development time use this $home-image and comment Deployment $home-image
+$portrait: url(/dist/img/portrait.png);
+
 // Menu Button
 .menu-btn {
     position: absolute;
@@ -90,7 +96,7 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url('/dist/img/portrait.png');
+            background: $portrait;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

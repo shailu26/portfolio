@@ -1,8 +1,8 @@
 // for Deployment use this $home-image
-//$portrait-small: url(/img/portrait_small.jpg);
+$portrait-small: url(/img/portrait_small.jpg);
 
 // else development time use this $home-image and comment Deployment $home-image
-$portrait-small: url(/dist/img/portrait_small.jpg);
+//$portrait-small: url(/dist/img/portrait_small.jpg);
 
 // WideScreen
 @include mediaXl {}
@@ -90,6 +90,10 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
     .frameworks,
     .database {
         width: 100%;
+    }
+
+    .database {
+        padding-top: 25px;
     }
 
     .platform-skills,

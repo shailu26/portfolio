@@ -1,8 +1,8 @@
 // for Deployment use this $home-image
-//$portrait: url(/img/portrait.png);
+$portrait: url(/img/portrait.png);
 
 // else development time use this $home-image and comment Deployment $home-image
-$portrait: url(/dist/img/portrait.png);
+//$portrait: url(/dist/img/portrait.png);
 
 // Menu Button
 .menu-btn {
